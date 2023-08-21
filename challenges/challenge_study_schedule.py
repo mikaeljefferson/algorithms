@@ -1,6 +1,6 @@
 def study_schedule(permanence_period, target_time):
     counter_study = 0
-    if type(target_time) != int:
+    if not isinstance(target_time, int):
         return None
     for [period_start, period_end] in permanence_period:
         if type(period_start) != int or type(period_end) != int:
