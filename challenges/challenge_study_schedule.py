@@ -6,5 +6,5 @@ def study_schedule(permanence_period, target_time):
         if type(period_start) != int or type(period_end) != int:
             return None
         if period_start <= target_time and period_end >= target_time:
-            counter += 1
+            counter_study += 1
     return counter_study
